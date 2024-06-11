@@ -1,0 +1,74 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="login.signin">
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signinemaileditext"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:background="@drawable/whitegrad"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="8dp"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signinpasswordedittext"
+        android:layout_width="330dp"
+        android:background="@drawable/whitegrad"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:minHeight="60sp"></com.google.android.material.textfield.TextInputEditText>
+
+    <ProgressBar
+        android:id="@+id/progress_signin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/signinpgbtn"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:text="sign-in"
+        android:drawableLeft="@drawable/baseline_login_24"
+        android:drawableTint="@color/white"
+        android:background="@drawable/whitegrad"
+        android:padding="8dp"
+        ></Button>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/arial"
+        android:text="Not yet registered ? Sign-up"
+        android:textColor="@color/gray"
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck"></Button>
+
+
+
+
+</LinearLayout></ScrollView>

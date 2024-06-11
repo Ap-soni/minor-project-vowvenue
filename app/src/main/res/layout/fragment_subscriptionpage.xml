@@ -1,0 +1,88 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:outlineProvider="none" tools:context=".activity_main">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" tools:layout_editor_absoluteX="0dp" tools:layout_editor_absoluteY="-59dp">
+        <!--  Navbar  -->
+
+        <!--  Main Content  -->
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-9dp" android:padding="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <!--  Send Button (if needed)  -->
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5sp"
+                    android:paddingBottom="5sp"
+                    android:text="Get Premium Now"
+                    android:textAlignment="center"
+                    android:textSize="26sp"
+                    android:textStyle="bold"/>
+
+                <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="199dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="199dp"
+                        android:paddingTop="20sp"
+                        android:background="@drawable/searchslideshow1"/>
+                </androidx.cardview.widget.CardView>
+              <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="Get premium for more features"
+                    android:textAlignment="center"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="40sp"
+                    android:text="Elevate your event planning journey with our premium package. "
+                    android:textAlignment="center" android:textSize="17sp"/>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="75dp"
+                     android:animateLayoutChanges="false"
+                     android:background="#EFEFEF"
+                     android:outlineProvider="paddedBounds"
+                     android:padding="16dp"
+                     android:paddingRight="15dp">
+                    <TextView
+                        android:id="@+id/months_textview"
+                        android:layout_width="206dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="14sp"
+                        android:text="6 MONTHS"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/pricemonth_textview"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="8dp"
+                        android:text="Rs.499"
+                        android:textAlignment="center"
+                        android:textColor="#2196F3"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="75dp" android:layout_marginTop="10sp" android:animateLayoutChanges="false" android:background="#EFEFEF" android:outlineProvider="paddedBounds" android:padding="16dp" android:paddingRight="15dp">
+                    <TextView android:id="@+id/year_textview" android:layout_width="206dp" android:layout_height="wrap_content" android:paddingLeft="14sp" android:text="1 YEAR" android:textColor="#000000" android:textSize="24sp" android:textStyle="bold"/>
+
+                    <TextView android:id="@+id/priceyear_textview" android:layout_width="105dp" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:layout_marginEnd="8dp" android:text="Rs.899" android:textAlignment="center" android:textColor="#2196F3" android:textSize="24sp" android:textStyle="bold"/>
+                </RelativeLayout>
+                <Button android:id="@+id/send_button" android:layout_width="match_parent" android:layout_height="62dp" android:layout_marginTop="40sp" android:text="Purchase" android:textColorLink="#2196F3" android:textSize="20sp"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

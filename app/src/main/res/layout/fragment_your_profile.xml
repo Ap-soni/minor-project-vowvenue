@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/framesettinglayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="bottomnavigation.your_profile">
+
+
+            <ImageView
+                android:id="@+id/coverphotoimageyour"
+                android:layout_width="411dp"
+                android:layout_height="150sp"
+                android:background="@drawable/cover_photobg"
+                app:layout_constraintBottom_toBottomOf="@+id/profileimgyour"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></ImageView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimgyour"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/whiteprofile"
+                android:padding="6dp"
+                android:src="@drawable/profilepictureicon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.142"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:fontFamily="@font/bristleradiant"
+                app:layout_constraintBottom_toBottomOf="@+id/profileimgyour"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.142"
+                app:layout_constraintStart_toEndOf="@+id/profileimgyour"
+                app:layout_constraintTop_toBottomOf="@+id/coverphotoimageyour"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <TextView
+                android:id="@+id/emailaddressyour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bristleradiant"
+                android:text="email address"
+                app:layout_constraintBottom_toBottomOf="@+id/profileimgyour"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintStart_toEndOf="@+id/profileimgyour"
+                app:layout_constraintTop_toBottomOf="@+id/coverphotoimageyour"
+                app:layout_constraintVertical_bias="0.729" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="152dp"
+                app:layout_constraintStart_toStartOf="@+id/coverphotoimageyour"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="25sp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="10sp"></TextView>
+
+            <Button
+                android:id="@+id/signinbtnprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="signin / signup"
+                android:textSize="17sp"
+                android:drawableTint="@color/white"
+                android:drawableLeft="@drawable/baseline_login_24"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/editprofile"
+                android:textSize="17sp"
+                android:drawableLeft="@drawable/baseline_edit_24"
+                android:drawableTint="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="edit profile"/>
+
+            <Button
+                android:id="@+id/subscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_diamond_24"
+                android:drawableRight="@drawable/baseline_diamond_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:text="vowvenue premium">
+
+            </Button>
+            <Button
+                android:id="@+id/setoffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_settings_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:text="Set offer ">
+
+            </Button>
+            <Button
+                android:id="@+id/uploadcatering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_file_upload_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:text="upload catering">
+
+            </Button>
+            <Button
+                android:id="@+id/uploadcakes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_file_upload_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:text="upload cakes services">
+            </Button>
+
+            <Button
+                android:id="@+id/uploadchaatandstalls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_file_upload_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:text="upload chaat stalls">
+
+            </Button>
+            <Button
+                android:id="@+id/uploaddrink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_file_upload_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:text="upload Drink stalls">
+
+            </Button>
+            <Button
+                android:id="@+id/uploadbartender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_file_upload_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:text="upload Bartender Service">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/uploadvenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_file_upload_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:visibility="gone"
+                android:text="upload Venue">
+
+            </Button>
+            <Button
+                android:id="@+id/deleteaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_delete_24"
+                android:drawableTint="@color/white"
+                android:textSize="17sp"
+                android:text="delete account">
+
+            </Button>
+
+            <Button
+                android:id="@+id/signoutbtnprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif-black"
+                android:text="signout"
+                android:drawableTint="@color/gray"
+                android:drawableLeft="@drawable/baseline_logout_24"
+                android:textColor="@color/gray">
+
+            </Button>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+</layout>

@@ -1,0 +1,442 @@
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_marginBottom="70sp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/cateringonimage"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:ignore="MissingConstraints"
+            android:layout_height="300dp"
+            >
+
+        </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="5sp"
+        android:layout_marginBottom="150sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:context="caterings.cateringonclick">
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <TextView
+            android:id="@+id/cateringname"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="14dp"
+            android:fontFamily="sans-serif-black"
+            android:text="cateringname"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cateringonimage">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="location"
+            android:layout_marginVertical="10sp"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cateringname">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginBottom="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="15sp"
+                android:background="@drawable/img"
+                >
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="rating"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="17sp">
+            </TextView>
+            <TextView
+                android:id="@+id/reviewno"
+                android:layout_marginTop="4dp"
+                android:text="(0 reviews)"
+                android:textColor="@color/blue"
+                android:layout_marginStart="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+            </TextView>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="sans-serif-black"
+            android:text="Veg price :"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+           >
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:fontFamily="sans-serif-black"
+                android:text="Rs "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+              >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/vegpricers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="XXXX"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </TextView>
+        </LinearLayout>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="25sp"
+            android:elevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vegpricers">
+            <LinearLayout
+                android:background="@drawable/strokesbgwhite"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView27"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="5sp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="14dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Pricing  Info "
+                    android:textColor="@color/black"
+                    android:textSize="20sp">
+                </TextView>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Veg price per plate"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp">
+                    </TextView>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:text="Rs."
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginStart="130dp"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/rupeesveg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginEnd="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXXX"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp">
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Non Veg price per plate"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp">
+                    </TextView>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:text="Rs."
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginStart="95dp"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/rupeesnonveg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginEnd="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXXX"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp">
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_marginBottom="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Min Capacity"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp">
+                    </TextView>
+
+                    <TextView
+                        android:fontFamily="sans-serif-black"
+                        android:text="Pax"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginStart="175dp"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/mincapacity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5sp"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginEnd="12dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="XXXX"
+                        android:textColor="@color/gray"
+                        android:textSize="17sp">
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/About"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="about"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+           >
+
+        </TextView>
+        <TextView
+        android:id="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:gravity="start"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginStart="16dp"
+            android:layout_marginVertical="15sp"
+           android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:text="Description"
+            android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        >
+
+    </TextView>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/messagebutton"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="10sp"
+                android:layout_width="280sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strokesbgwhite"
+                android:text="Message"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                >
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+            <ImageButton
+                android:layout_marginRight="5sp"
+                android:id="@+id/callbtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="5sp"
+                android:background="@drawable/callround"
+                tools:ignore="SpeakableTextPresentCheck">
+
+            </ImageButton>
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:text="What Customers are saying ?"
+            android:textSize="20sp"
+            android:layout_marginVertical="15sp"
+            android:layout_marginHorizontal="15sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reviewrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="10sp"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_marginTop="15sp"
+            android:text="Reviews"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reviewbtn"
+            android:layout_marginVertical="15sp"
+            android:layout_marginHorizontal="15sp"
+            android:text="Write a review"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:paddingEnd="15sp"
+            android:paddingStart="20sp"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textAlignment="textStart"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/arial"
+            android:background="@drawable/strokesbggray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout></LinearLayout></ScrollView>
+</layout>

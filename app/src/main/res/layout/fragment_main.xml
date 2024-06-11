@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:fitsSystemWindows="false"
+                app:contentScrim="@android:color/white"
+                app:titleCollapseMode="fade"
+
+                app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_marginVertical="10sp"
+                    android:layout_marginHorizontal="10sp"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/hotelimg"
+                        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hotels"
+                        android:textSize="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-black"></TextView>
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginVertical="10sp"
+                    android:layout_marginLeft="200sp"
+                    android:layout_width="180dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/marriagegarden"
+                        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-black"
+                        android:text="Marriage \nGardens"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"></TextView>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="115sp"
+                    android:layout_marginLeft="5sp"
+                    android:layout_width="125dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/partyhall"
+                        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Party \nHalls"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-black"></TextView>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="115sp"
+                    android:layout_marginLeft="135sp"
+                    android:layout_width="125dp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/reort"
+                        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resorts"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-black"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="125dp"
+                    android:layout_marginTop="115sp"
+                    android:layout_marginLeft="265sp"
+                    android:layout_height="100dp"
+                    app:cardCornerRadius="30dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/farmhouse"
+                        tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FarmHouse"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-black"></TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sortbtn"
+                    android:layout_width="78dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="230sp"
+                    android:background="@drawable/strokesgray"
+                    android:drawableEnd="@drawable/sort_24"
+                    android:drawablePadding="-24sp"
+                    android:drawableTint="#3b3b3b"
+                    android:fontFamily="@font/arial"
+                    android:text="Sort"
+                    android:textAllCaps="false"
+                    android:textColor="#3b3b3b"
+                    tools:ignore="TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/localitybtn"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="105sp"
+                    android:layout_marginTop="230sp"
+                    android:background="@drawable/strokesgray"
+                    android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                    android:drawablePadding="-24sp"
+                    android:drawableTint="#3b3b3b"
+                    android:text="Locality"
+                    android:textAllCaps="false"
+                    android:textColor="#3b3b3b"
+                    tools:ignore="TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/pricebtn"
+                    android:layout_width="110dp"
+                    android:layout_height="40sp"
+                    android:layout_marginStart="227sp"
+                    android:layout_marginTop="230sp"
+                    android:background="@drawable/strokesgray"
+                    android:drawableEnd="@drawable/baseline_keyboard_arrow_down_24"
+                    android:drawablePadding="-24sp"
+                    android:drawableTint="#3b3b3b"
+                    android:text="Price"
+                    android:textAllCaps="false"
+                    android:textColor="#3b3b3b"
+                    tools:ignore="TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+                <ImageButton
+                    android:id="@+id/filerbtn"
+                    android:layout_width="50dp"
+                    android:layout_height="40sp"
+                    android:layout_marginStart="350sp"
+                    android:layout_marginTop="230sp"
+                    android:background="@drawable/filtericonvertical"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"></ImageButton>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/transparentcurve2"
+                    android:fitsSystemWindows="true"
+                    app:collapseIcon="@drawable/transparentcurve2"
+                    app:layout_collapseMode="pin">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        app:iconifiedByDefault="false"
+                        app:queryHint="Search Your Vow Caters Here"
+                        app:queryBackground="@android:color/transparent"
+                        style="@style/CustomSearchViewStyle"
+                        android:textColorHint="@color/white"
+                        ></androidx.appcompat.widget.SearchView>
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:ignore="SpeakableTextPresentCheck">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:background="@drawable/coordinatorbg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/collections"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="30sp"
+                    android:text="Explore our collections"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15sp"
+                        android:layout_marginVertical="15sp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="200dp"
+                            android:layout_height="250sp"
+                            app:cardCornerRadius="10sp">
+
+                            <ImageButton
+                                android:id="@+id/supervowbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.2"
+                                android:background="#0096FF"
+                                tools:ignore="SpeakableTextPresentCheck">
+
+                            </ImageButton>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60sp"
+                                android:layout_height="60sp"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="20sp"
+                                android:src="@drawable/diamondblue">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20sp"
+                                android:layout_marginTop="140sp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="Super"
+                                android:textColor="@color/black"
+                                android:textSize="30sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="110sp"
+                                android:layout_marginTop="140sp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="VOW"
+                                android:textColor="#0096FF"
+                                android:textSize="30sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25sp"
+                                android:layout_marginTop="180sp"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:text="Super Check-Ins"
+                                android:textColor="#899499"
+                                android:textSize="20sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25sp"
+                                android:layout_marginTop="205sp"
+                                android:fontFamily="sans-serif-condensed-medium"
+                                android:text="Super ratings"
+                                android:textColor="#899499"
+                                android:textSize="20sp">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="15sp"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="140sp"
+                                android:layout_height="120sp"
+                                app:cardCornerRadius="10sp">
+
+                                <ImageButton
+                                    android:id="@+id/wizardbtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:alpha="0.2"
+                                    android:background="@color/gray"
+                                    tools:ignore="SpeakableTextPresentCheck">
+
+                                </ImageButton>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_marginLeft="35sp"
+                                    android:layout_marginTop="20sp"
+                                    android:src="@drawable/wizardwhite">
+
+                                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25sp"
+                                    android:layout_marginTop="80sp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:text="Wizard 5% off"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="140sp"
+                                android:layout_height="120sp"
+                                android:layout_marginTop="10sp"
+                                app:cardCornerRadius="10sp">
+
+                                <ImageButton
+                                    android:id="@+id/managedbtn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:alpha="0.2"
+                                    android:background="#F88379"
+                                    tools:ignore="SpeakableTextPresentCheck">
+
+                                </ImageButton>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_marginLeft="35sp"
+                                    android:layout_marginTop="20sp"
+                                    android:src="@drawable/managedicon">
+
+                                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="12sp"
+                                    android:layout_marginTop="80sp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:text="Managed by VOW"
+                                    android:textColor="#8B0000"
+                                    android:textSize="15sp">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="15sp"
+                            android:orientation="vertical">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="140sp"
+                                android:layout_height="120sp"
+                                app:cardCornerRadius="10sp">
+
+                                <ImageButton
+                                    android:id="@+id/premiumbtn"
+                                    android:layout_width="133dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#E6E6FA"
+                                    tools:ignore="SpeakableTextPresentCheck">
+
+                                </ImageButton>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_marginLeft="35sp"
+                                    android:layout_marginTop="20sp"
+                                    android:src="@drawable/premium">
+
+                                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20sp"
+                                    android:layout_marginTop="80sp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:text="Premium VOWs"
+                                    android:textColor="#800080"
+                                    android:textSize="15sp">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="140sp"
+                                android:layout_height="120sp"
+                                android:layout_marginTop="10sp"
+                                app:cardCornerRadius="10sp">
+
+                                <ImageButton
+                                    android:id="@+id/townbtn"
+                                    android:layout_width="133dp"
+                                    android:layout_height="match_parent"
+                                    android:background="#E6E6FA"
+                                    tools:ignore="SpeakableTextPresentCheck">
+
+                                </ImageButton>
+
+                                <de.hdodenhof.circleimageview.CircleImageView
+                                    android:layout_width="50sp"
+                                    android:layout_height="50sp"
+                                    android:layout_marginLeft="35sp"
+                                    android:layout_marginTop="20sp"
+                                    android:src="@drawable/vowtownwhite">
+
+                                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25sp"
+                                    android:layout_marginTop="80sp"
+                                    android:fontFamily="sans-serif-black"
+                                    android:text="VOW town"
+                                    android:textColor="#800080"
+                                    android:textSize="15sp">
+
+                                </TextView>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/deals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="30sp"
+                    android:text="Special DEALS"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_marginHorizontal="15sp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_height="200dp"
+                            app:cardCornerRadius="30dp"
+                            android:layout_marginTop="20dp">
+                            <ImageView
+                                android:background="@drawable/specialdeals2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </ImageView>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            app:cardCornerRadius="30dp"
+                            android:layout_marginTop="20dp">
+
+                            <ImageButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/specialdeal1"
+                                tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="   Discover planning \n       tips  from  our \n         Top Planner "
+                                android:textSize="20dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="sans-serif-black"
+                                android:layout_marginTop="55dp"
+                                android:layout_marginLeft="100dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="135dp"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="  Vow     | Wedding\n Venue       Tips"
+                                android:textColor="@color/white"
+                                android:textSize="15dp"
+                                tools:ignore="TextSizeCheck"></TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_height="200dp"
+                            app:cardCornerRadius="30dp"
+                            android:layout_marginTop="20dp">
+                           <ImageView
+                               android:background="@drawable/specialdeal3"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                           </ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="30sp"
+                    android:text="Reviews"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_height="100sp"
+                            app:cardCornerRadius="30dp"
+                            android:layout_marginTop="20dp">
+
+                            <ImageButton
+
+                                android:background="@color/white"
+                                android:id="@+id/customerreviewbtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="SpeakableTextPresentCheck">
+
+                            </ImageButton>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:background="@drawable/img_4"
+                                android:layout_marginTop="15sp"
+                                android:layout_marginLeft="15sp"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <TextView
+                                android:textSize="18sp"
+                                android:text="Customer Reviews"
+                                android:layout_marginTop="15sp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="95sp"
+                                android:fontFamily="sans-serif-black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:textSize="17sp"
+                                android:text="What are Customer's saying ?"
+                                android:layout_marginTop="45sp"
+                                android:layout_marginLeft="95sp"
+                                android:textColor="@color/gray"
+                                android:fontFamily="@font/bristleradiant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_height="100sp"
+                            app:cardCornerRadius="30dp"
+                            android:layout_marginTop="20dp">
+                            <ImageButton
+                                android:id="@+id/ownerreviewbtn"
+                                android:background="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="SpeakableTextPresentCheck"/>
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:src="@drawable/img_5"
+                                android:layout_marginTop="15sp"
+                                android:layout_marginLeft="15sp"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+                            <TextView
+                                android:textSize="18sp"
+                                android:text="Service Provider Reviews"
+                                android:layout_marginTop="15sp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="95sp"
+                                android:fontFamily="sans-serif-black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:textSize="17sp"
+                                android:text="What are Owner's saying ?"
+                                android:layout_marginTop="40sp"
+                                android:layout_marginLeft="95sp"
+                                android:textColor="@color/gray"
+                                android:fontFamily="@font/bristleradiant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            android:layout_marginHorizontal="10sp"
+                            android:layout_height="100sp"
+                            app:cardCornerRadius="30dp"
+                            android:layout_marginTop="20dp">
+
+                            <ImageButton
+                                android:id="@+id/attendeereviewbtn"
+                                android:background="@color/white"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                tools:ignore="SpeakableTextPresentCheck"/>
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:src="@drawable/img_6"
+                                android:layout_marginTop="15sp"
+                                android:layout_marginLeft="15sp"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp">
+
+                            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                            <TextView
+                                android:textSize="20sp"
+                                android:text="Attendee's Survey"
+                                android:layout_marginTop="15sp"
+                                android:textColor="@color/black"
+                                android:layout_marginLeft="95sp"
+                                android:fontFamily="sans-serif-black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:textSize="18sp"
+                                android:text="What are Attendees Say ?"
+                                android:layout_marginTop="40sp"
+                                android:layout_marginLeft="95sp"
+                                android:textColor="@color/gray"
+                                android:fontFamily="@font/bristleradiant"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:id="@+id/handpicked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="30sp"
+                    android:text="Handpicked for you"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/venuerecyclerview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingStart="30sp"
+                    android:text="Go on with Search"
+                    android:textColor="@color/black"
+                    android:textSize="17sp">
+
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/venuerecyclerview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10sp"></androidx.recyclerview.widget.RecyclerView>
+
+
+                <TextView
+                    android:layout_marginTop="30sp"
+                    android:fontFamily="@font/timesnewroman"
+                    android:text="Global VowVenue Usage Statistics"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:background="@drawable/img_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp">
+                </ImageView>
+
+                <TextView
+                    android:fontFamily="@font/timesnewroman"
+                    android:text="Global Review Statistics"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginVertical="15sp"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <ImageView
+                    android:layout_marginBottom="190dp"
+                    android:background="@drawable/img_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp">
+                </ImageView>
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
+
+
+
+
+
+

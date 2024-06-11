@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/homenav"
+            android:icon="@drawable/homenav"
+            android:title="Home" />
+    </group>
+    <item android:title="Bookings"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="View/Manage Bookings"
+                    android:icon="@drawable/bookingsicon"
+                    android:id="@+id/bookings" />
+                <item
+                    android:id="@+id/wishlist"
+                    android:title="Wishlist"
+                    android:icon="@drawable/heartunclicked"
+                    />
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="Rewards">
+        <menu >
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/rewards"
+                    android:icon="@drawable/rewardicon"
+                    android:title="Rewards" />
+                <item
+                    android:id="@+id/referearn"
+                    android:icon="@drawable/refericon"
+                    android:title="Refer and Earn">
+
+                </item>
+            </group>
+        </menu>
+
+
+    </item>
+
+    <item android:title="Settings and Legal"
+        >
+        <menu>
+            <group android:checkableBehavior="single"
+                >
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/settingsicon"
+                    android:title="Settings and Legal" />
+
+            </group>
+        </menu>
+
+    </item>
+    <item android:title="Help and Support">
+        <menu>
+           <group android:checkableBehavior="single"
+               >
+               <item
+                   android:id="@+id/contactcustomer"
+                   android:icon="@drawable/customerserviceicon"
+                   android:title="Contact Customer Service" />
+               <item
+                   android:id="@+id/safetyresource"
+                   android:icon="@drawable/safetyicon"
+                   android:title="Safety Resource center" />
+               <item
+                   android:id="@+id/diputeresolve"
+                   android:icon="@drawable/dealicon"
+                   android:title="Dispute Resolution" />
+           </group>
+        </menu>
+
+    </item>
+    <item
+        android:title="App Version 1.0.0"
+        >
+
+    </item>
+
+</menu>

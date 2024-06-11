@@ -1,0 +1,288 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
+    tools:context="navigationdrawercomponents.referEarn">
+
+    <TextView
+        android:id="@+id/textViewrewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="284dp"
+        android:fontFamily="sans-serif-black"
+        android:text="   View\nRewards"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="0dp"
+        android:layout_height="280sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradientbg8">
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="224dp"
+                android:fontFamily="@font/timesnewroman"
+                android:text="Invite friends to "
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.162" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="152dp"
+                android:fontFamily="@font/swift"
+                android:text=" Book Now Book Vow "
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.265" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Win rewards when they complete\ntheir first Booking"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="74dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/strokesbgwhf"
+                android:text="Refer and win"
+                app:layout_constraintBottom_toTopOf="@+id/textView15"
+                app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="124dp"
+                android:layout_height="219dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/referearnicon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="41dp"
+                android:layout_marginBottom="27dp"
+                android:fontFamily="sans-serif-black"
+                android:text="T&amp;Capply"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/instagicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/linkedinicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/whatsappicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/twittericon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="280dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Invite via\nRefferal QR"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewrefer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="288dp"
+        android:fontFamily="sans-serif-black"
+        android:text="How to Refer"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="284dp"
+        android:fontFamily="sans-serif-black"
+        android:text="More\nOptions"
+        android:textColor="@color/gray"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageButton7" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="316dp"
+        android:background="@drawable/howrefer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="65dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/blueqr"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="@+id/imageButton5"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="316dp"
+        android:background="@drawable/viewrewards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="236dp"
+        android:text="Send Invites On"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="104dp"
+        android:background="@drawable/moreoptions"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25sp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/whitegrad"
+        android:text="Invite Contacts"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="settings.about.about">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_margin="15dp">
+       <Button
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:id="@+id/termsofservicebtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:fontFamily="sans-serif-medium"
+           android:textSize="15sp"
+           android:gravity="start"
+           android:text="Terms Of Services"/>
+       <Button
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:id="@+id/privacypolicybtn"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:fontFamily="sans-serif-medium"
+           android:textSize="15sp"
+           android:gravity="start"
+           android:text="Privacy Policy"/>
+       <Button
+           style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textColor="@color/black"
+           android:fontFamily="sans-serif-medium"
+           android:textSize="15sp"
+           android:gravity="start"
+           android:text="App Version 1.0.0"/>
+
+
+
+   </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,47 @@
+<layout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="Reviews.reviewpage"
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attendee Reviews" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reviewrecycler"
+            android:layout_width="match_parent"
+            android:layout_marginVertical="15sp"
+            android:layout_marginHorizontal="15sp"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reviewbtn"
+            android:layout_marginVertical="15sp"
+            android:layout_marginHorizontal="15sp"
+            android:text="Write a review"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:paddingEnd="15sp"
+            android:paddingStart="20sp"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
+            android:textAlignment="textStart"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/arial"
+            android:background="@drawable/strokesbggray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+</layout>

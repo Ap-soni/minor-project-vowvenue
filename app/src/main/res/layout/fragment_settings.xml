@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/framesettinglayout"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearsettinglayout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/white"
+        android:layout_margin="15dp"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        tools:context="navigationdrawercomponents.Settings">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:id="@+id/currencybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconGravity="start"
+            android:gravity="start"
+            app:iconSize="25dp"
+            app:iconTint="@color/black"
+            app:icon="@drawable/currencyicon"
+            android:text="Currency"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="25dp" >
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/languagebtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:iconSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconTint="@color/black"
+            android:gravity="start"
+            app:iconGravity="start"
+            app:icon="@drawable/languageicon"
+            android:text="Language"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/countrybtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            app:iconSize="25dp"
+            android:layout_height="wrap_content"
+            app:iconTint="@color/black"
+            android:gravity="start"
+            app:icon="@drawable/countryicon"
+            android:text="Country"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ratebtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:iconSize="25dp"
+            android:gravity="start"
+            app:iconTint="@color/black"
+            android:text="Rate Us"
+            app:icon="@drawable/ratingstar"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/feedbackbtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            app:iconSize="25dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            app:icon="@drawable/feedbackicon"
+            android:text="Send Feedback"
+            app:iconTint="@color/black"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/aboutbtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            app:iconTint="@color/black"
+            app:iconSize="25dp"
+            android:text="About"
+            app:icon="@drawable/abouticon"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

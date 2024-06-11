@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical"
+    tools:context="settings.about.termsofservice">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/termsandconditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:text="Terms Of Services"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="17dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/descrpiptionterms"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="15sp"
+                android:text="Terms Descrition"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

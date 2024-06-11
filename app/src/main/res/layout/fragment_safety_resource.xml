@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+   >
+    <ScrollView
+        android:layout_marginBottom="55sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginHorizontal="15sp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            tools:context=".overview">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Trust and safety resource center"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Safety tips, guidelines, and our values"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="86dp"></TextView>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Carterers"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="132dp"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                app:cardCornerRadius="20sp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/safetyresource1"
+                    tools:layout_editor_absoluteX="-14dp"
+                    tools:layout_editor_absoluteY="183dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eat Safely"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="At VovVenue, we are dedicated to ensuring that everyone can enjoy delicious meals without compromising their well-being. We have implemented numerous measures to safeguard our diners and empower you to prioritize your safety while savoring culinary delights."
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium">
+            </TextView>
+
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="If something goes wrong"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="132dp"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                app:cardCornerRadius="20sp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/safetyresource2"
+                    tools:layout_editor_absoluteX="-14dp"
+                    tools:layout_editor_absoluteY="183dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What to do if something goes wrong"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In the unlikely event that something goes wrong, we're here for you. In this section, you can find guidelines to follow should an issue arise, as well as the steps we'll take to look after you."
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="Partners"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="132dp"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                app:cardCornerRadius="20sp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/safetyresource3"
+                    tools:layout_editor_absoluteX="-14dp"
+                    tools:layout_editor_absoluteY="183dp">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Host Safely"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bringing peace of mind to our VowVenue Partners is a top priority. We help hosts feel confident about welcoming guests, and have processes in place to protect both you and your property. You can learn more about how to stay safe while hosting on our Partner resource page."
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</FrameLayout>

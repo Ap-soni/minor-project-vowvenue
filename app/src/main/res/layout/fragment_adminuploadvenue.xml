@@ -1,0 +1,314 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp"
+        tools:context="admin.admin_upload_catering">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_marginTop="30sp"
+            android:layout_marginHorizontal="25sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Venue Name"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/fullname"
+                android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                android:hint="Enter Full Name"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Veg price per plate"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/vegperplate"
+                android:drawableLeft="@drawable/baseline_price_check_24"
+                android:hint="Enter Price "
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="number"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Non-Veg price per plate"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/nonvegperplate"
+                android:drawableLeft="@drawable/baseline_price_check_24"
+                android:hint="Enter Price"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="number"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Min Capacity"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+
+
+            <EditText
+                android:id="@+id/mincapacity"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/strokesbgblue"
+                android:drawableLeft="@drawable/baseline_price_check_24"
+                android:drawableTint="@color/gray"
+                android:hint="Enter min capacity"
+                android:inputType="number"
+                android:paddingStart="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Experience"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/experience"
+                android:drawableLeft="@drawable/baseline_swipe_right_24"
+                android:hint="Enter Experience"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="number"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Description by owners"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/bycaterers"
+                android:drawableLeft="@drawable/baseline_description_24"
+                android:hint="Enter Description"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Starting price of room"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/roomprice"
+                android:drawableLeft="@drawable/baseline_description_24"
+                android:hint="Enter room price "
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Starting price of decor"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/decorprice"
+                android:drawableLeft="@drawable/baseline_description_24"
+                android:hint="Enter decor price"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Location"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/location"
+                android:drawableLeft="@drawable/baseline_edit_location_24"
+                android:hint="Enter Location"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Rating"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/rating"
+                android:drawableLeft="@drawable/baseline_star_border_24"
+                android:hint="Enter Rating"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:digits="012345"
+                android:imeOptions="actionNext"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Phone No."
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/phonenumber"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:hint="Enter Phone Number"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="phone"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Select Venue Images"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/image1"
+                    android:layout_width="90sp"
+                    android:layout_height="100sp"
+                    android:layout_marginTop="15sp"
+                    android:background="@drawable/selectingimage"
+                    android:hint="Select Image"
+                    android:contentDescription="@string/app_name" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></ProgressBar>
+
+
+            <Button
+                android:id="@+id/savedetails"
+                android:text="save details"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100sp"></Button>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView></layout>

@@ -1,0 +1,462 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    tools:ignore="SpeakableTextPresentCheck">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Select your preferred area"
+            android:textAlignment="textStart"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15sp"
+            android:text="POPULAR"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Koramangalam"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Mg Road"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Rajaji Nagar"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Indiranagar"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Jayanagar"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="15sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="10sp"
+            android:text="OTHER LOCALATIES"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Madiwala"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Majestic"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="305dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Yesvantpur Railway Station"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Marathahalli"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="181dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Tin factory"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Majestic City Railway Station"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Kalyan Nagar"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_view_border"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon"></ImageView>
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:text="Gandhi Nagar"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

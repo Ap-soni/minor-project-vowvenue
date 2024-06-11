@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical"
+    tools:context="settings.about.privacypolicy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/legalterms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial"
+                android:text="Legal Terms"
+                android:textSize="30dp"
+
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:id="@+id/vowvenueprivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bristleradiant"
+                android:text="VowVenue Privacy"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="17dp" />
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="240dp">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    tools:layout_editor_absoluteX="46dp"
+                    tools:layout_editor_absoluteY="56dp"
+                    android:background="@drawable/eventhall" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textViewprivacy"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy policy"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="17dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Information Collection:">
+            </TextView><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="15sp"
+                android:text="The app collects user data for booking purposes, including personal and event details.">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Purpose of Data Usage:">
+            </TextView><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="15sp"
+                android:text="User data is used solely for booking-related activities and not shared for unrelated purposes.">
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Cookies and Tracking:">
+            </TextView><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="15sp"
+                android:text="The app uses cookies to enhance the user experience, providing personalized features.">
+        </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Third-Party Integration:">
+            </TextView><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="15sp"
+                android:text="If integrated, third-party services adhere to strict privacy standards, with clear communication about shared data.">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Security Measures:">
+            </TextView><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial"
+            android:textSize="15sp"
+            android:text="Encryption safeguards user transactions, ensuring secure payment processing and data protection.">
+
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="User Rights:">
+            </TextView><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial"
+            android:textSize="15sp"
+            android:text=" Users have the right to access, correct, or delete their data, ensuring control over their personal information.">
+
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Changes to Privacy Policy:">
+            </TextView><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial"
+            android:textSize="15sp"
+            android:text="Users are notified of any changes to the privacy policy, with a clear explanation of updates.">
+
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Compliance with Laws:">
+            </TextView><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial"
+            android:textSize="15sp"
+            android:text="The app complies with data protection laws, providing users with confidence in their data's legal handling.">
+
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/arial"
+                android:textSize="20sp"
+                android:text="Contact Information:">
+            </TextView><TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial"
+            android:textSize="15sp"
+            android:text="Contact details are provided for users to reach out regarding privacy concerns or questions.">
+        </TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

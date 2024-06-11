@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:cardCornerRadius="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:id="@+id/cateringfullimage"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        tools:ignore="MissingConstraints"
+                        android:layout_height="fill_parent">
+
+                    </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/cateringfullname"
+                app:layout_constraintTop_toBottomOf="@+id/cateringfullname">
+
+
+                <TextView
+                    android:id="@+id/locationcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="212dp"
+                    android:text="Location"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/ratingcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="rating"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cateringfullname"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.901"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="TextSizeCheck"></TextView>
+
+                <TextView
+                    android:id="@+id/cateringfullname"
+                    android:layout_width="371dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:fontFamily="@font/arial"
+                    android:text="Catering"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/locationcard">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/pricecard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/timesnewroman"
+                    android:text="price"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="21dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/starting"></TextView>
+
+
+                <TextView
+                    android:id="@+id/starting"
+                    android:layout_width="371dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="15sp"
+                    android:text="Starting price"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cateringfullname"></TextView>
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="15sp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ratestar"
+                    app:layout_constraintEnd_toStartOf="@+id/ratingcard"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </ImageView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

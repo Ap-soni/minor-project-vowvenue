@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="265dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    android:layout_marginHorizontal="5sp"
+    android:layout_height="350dp">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <ImageView
+            android:id="@+id/cateringimgsecond"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            tools:ignore="MissingConstraints"
+            android:layout_height="fill_parent"
+           >
+        </ImageView>
+        <TextView
+            android:id="@+id/ratingsecond"
+            android:layout_marginTop="245dp"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="235dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="15sp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="170dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/caternamesecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Cater name"
+                android:textColor="@color/black"
+                android:maxLines="2"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/locationsecond"
+                android:text="location"
+                android:textColor="@color/gray"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/pricesecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="XXXX"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="  Per Plate"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                >
+            </TextView>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

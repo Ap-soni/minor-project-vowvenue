@@ -1,0 +1,19 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+        <!--  Title  -->
+        <TextView android:id="@+id/title_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rate Us" android:textSize="34sp" android:textStyle="bold" android:layout_centerHorizontal="true" android:layout_marginTop="32dp" android:layout_marginBottom="16dp"/>
+        <!--  Instruction  -->
+        <TextView android:id="@+id/instruction_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thank you for using our app! Your feedback helps us improve. Please take a moment to rate us on the Play Store." android:layout_below="@id/title_textview" android:layout_centerHorizontal="true" android:layout_marginBottom="16dp" android:textColor="@android:color/darker_gray" android:textAlignment="center"/>
+        <!--  Star Rating  -->
+        <RatingBar android:id="@+id/star_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="0" android:stepSize="1" android:layout_below="@id/instruction_textview" android:layout_centerHorizontal="true" android:layout_marginTop="16dp"/>
+        <!--  Rate Now Button  -->
+        <Button android:id="@+id/rate_button"
+            android:textSize="17sp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Rate Now" android:layout_below="@id/star_rating" android:layout_centerHorizontal="true" android:layout_marginTop="32dp"  android:textColor="@android:color/white" android:textAllCaps="false" android:padding="16dp"/>
+        <!--  Remind Me Later Button  -->
+        <Button android:id="@+id/remind_later_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Remind Me Later" android:layout_below="@id/rate_button" android:layout_centerHorizontal="true" android:layout_marginTop="16dp"  android:textColor="@android:color/white" android:textAllCaps="false"
+            android:textSize="17sp" android:padding="16dp"/>
+        <!--  No, Thanks Button  -->
+        <Button android:id="@+id/no_thanks_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="No, Thanks" android:layout_below="@id/remind_later_button" android:layout_centerHorizontal="true" android:layout_marginTop="16dp" android:backgroundTint="@android:color/darker_gray" android:textColor="@android:color/white" android:textAllCaps="false" android:padding="16dp"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

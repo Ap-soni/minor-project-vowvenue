@@ -1,0 +1,102 @@
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50sp"
+        tools:context="admin.admin_upload_catering">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:layout_marginTop="30sp"
+            android:layout_marginHorizontal="25sp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Offer Code"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/offercode"
+                android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                android:hint="Enter Offer Code"
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Offer Percentage"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/perrcent"
+                android:drawableLeft="@drawable/baseline_price_check_24"
+                android:hint="Enter Offer Percent "
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="number"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="sans-serif-black"
+                android:paddingStart="55dp"
+                android:text="Deals On"
+                android:textColor="@color/gray"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"></TextView>
+            <EditText
+                android:id="@+id/DealsOn"
+                android:drawableLeft="@drawable/baseline_price_check_24"
+                android:hint="Enter Asset Name "
+                android:drawableTint="@color/gray"
+                android:paddingStart="20dp"
+                android:inputType="text"
+                android:background="@drawable/strokesbgblue"
+                android:layout_width="match_parent"
+                android:layout_height="50sp" />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></ProgressBar>
+
+
+            <Button
+                android:id="@+id/savedetails"
+                android:text="save details"
+                android:textSize="17sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100sp"></Button>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView></layout>

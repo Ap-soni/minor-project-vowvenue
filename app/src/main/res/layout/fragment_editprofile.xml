@@ -1,0 +1,233 @@
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/framesettinglayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="bottomnavigation.your_profile">
+
+
+                <ImageView
+                    android:id="@+id/coverphotoimage"
+                    android:layout_width="411dp"
+                    android:layout_height="150sp"
+                    android:background="@drawable/cover_photobg"
+                    app:layout_constraintBottom_toBottomOf="@+id/profileimg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"></ImageView>
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileimg"
+                    android:layout_width="130sp"
+                    android:layout_height="130sp"
+                    android:layout_marginTop="84dp"
+                    android:background="@drawable/whiteprofile"
+                    android:padding="6dp"
+                    android:src="@drawable/profilepictureicon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.142"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <ImageButton
+                    android:id="@+id/profileimgbtn"
+                    android:layout_width="34dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/bluecamera"
+                    app:layout_constraintBottom_toBottomOf="@+id/profileimg"
+                    app:layout_constraintEnd_toEndOf="@+id/profileimg"
+                    app:layout_constraintHorizontal_bias="0.904"
+                    app:layout_constraintStart_toStartOf="@+id/profileimg"
+                    app:layout_constraintTop_toTopOf="@+id/profileimg"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageButton>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30sp"
+                android:layout_marginHorizontal="25sp"
+                android:orientation="vertical"
+                android:layout_marginBottom="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingStart="55dp"
+                    android:text="Full Name"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck"></TextView>
+                <EditText
+                    android:id="@+id/fullname"
+                    android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                    android:hint="Enter Full Name"
+                    android:drawableTint="@color/gray"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/strokesbgblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingStart="55dp"
+                    android:text="Gender"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck"></TextView>
+                <RadioGroup
+                    android:id="@+id/genderRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/maleRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textSize="17sp"/>
+
+                    <RadioButton
+                        android:layout_marginHorizontal="25sp"
+                        android:id="@+id/femaleRadioButton"
+                        android:textSize="17sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:id="@+id/otherRadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:textSize="17sp"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingStart="55dp"
+                    android:text="Date Of Birth"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck"></TextView>
+                <EditText
+                    android:id="@+id/birthdate"
+                    android:drawableLeft="@drawable/baseline_date_range_24"
+                    android:hint="DD/MM/YYYY"
+                    android:drawableTint="@color/gray"
+                    android:paddingStart="20dp"
+                    android:inputType="date"
+                    android:background="@drawable/strokesbgblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingStart="55dp"
+                    android:text="Email Address"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck"></TextView>
+                <EditText
+                    android:id="@+id/emailaddress"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:hint="Enter Email Address"
+                    android:drawableTint="@color/gray"
+                    android:paddingStart="20dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/strokesbgblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingStart="55dp"
+                    android:text="Phone No."
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck"></TextView>
+                <EditText
+                    android:id="@+id/phonenumber"
+                    android:drawableLeft="@drawable/baseline_phone_24"
+                    android:hint="Enter Phone Number"
+                    android:drawableTint="@color/gray"
+                    android:paddingStart="20dp"
+                    android:inputType="phone"
+                    android:background="@drawable/strokesbgblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingStart="55dp"
+                    android:text="Home Address"
+                    android:textColor="@color/gray"
+                    android:textSize="15dp"
+                    tools:ignore="TextSizeCheck"></TextView>
+                <EditText
+                    android:id="@+id/homeaddress"
+                    android:drawableLeft="@drawable/baseline_maps_home_work_24"
+                    android:hint="Enter Your Address"
+                    android:drawableTint="@color/gray"
+                    android:paddingStart="20dp"
+                    android:background="@drawable/strokesbgblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp" />
+
+                <Button
+                    android:id="@+id/savedetails"
+                    android:text="save details"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></Button>
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>

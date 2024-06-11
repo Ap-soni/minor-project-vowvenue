@@ -1,0 +1,99 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="login.signup">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fullname"
+        android:layout_width="330sp"
+        android:layout_height="60sp"
+        android:background="@drawable/whitegrad"
+        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+        android:drawablePadding="8sp"
+        android:hint="Enter Your Full Name"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailsignupeditext"
+        android:layout_width="330sp"
+        android:layout_height="60sp"
+        android:background="@drawable/whitegrad"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="8sp"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/signuppasswordedittext"
+        android:layout_width="330sp"
+        android:background="@drawable/whitegrad"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="8sp"
+        android:padding="8dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:minHeight="60sp"></com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/confirmpwdedittext"
+        android:layout_width="330sp"
+        android:background="@drawable/whitegrad"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="8sp"
+        android:padding="8dp"
+        android:textColor="@color/gray"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Your Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:minHeight="60sp"></com.google.android.material.textfield.TextInputEditText>
+
+    <ProgressBar
+        android:id="@+id/progress_signup"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150sp" />
+    <Button
+        android:id="@+id/signuppgbtn"
+        android:layout_width="330sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:text="sign-up"
+        android:drawableLeft="@drawable/baseline_login_24"
+        android:drawableTint="@color/white"
+        android:background="@drawable/whitegrad"
+        android:padding="8dp"
+        android:minHeight="60sp"
+        ></Button>
+    <Button
+        android:id="@+id/alreadyuser"
+        android:layout_width="258sp"
+        android:background="@android:color/transparent"
+        android:text="Already an user ? Sign-in"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/arial"
+        android:textSize="13sp"
+        android:layout_marginLeft="35sp"
+        android:layout_height="wrap_content"></Button>
+
+
+
+</LinearLayout>
+</ScrollView>
